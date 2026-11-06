@@ -13,7 +13,7 @@ Tool images: 800x400 (2:1) recommended, same size for every tool so the page loo
 
 <div align="center">
 
-<img src="Images/swt.png" alt="Security Tools Installation - SEC W TOM" width="20%"/>
+<img src="Images/attackdefensive.jfif" alt="Security Tools Installation - SEC W TOM" width="50%"/>
 
 # 🛠️ Security Tools Installation
 
