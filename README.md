@@ -75,8 +75,8 @@ The series covers both sides of cybersecurity:
 
 | | Tool | Team | What it does | Status |
 |---|---|---|---|---|
-| <img src="Images/wazuh.png" width="70" alt="Wazuh"/> | **Wazuh** | 🔵 Blue | Open-source SIEM and XDR |  ✅ Available |
-| <img src="Images/Suricata.jpg" width="70" alt="Suricata"/> | [**Suricata**](./Suricata/) | 🔵 Blue | Network IDS/IPS and traffic monitoring | ✅ Available |
+| <img src="Images/wazuh.png" width="70" alt="Wazuh"/> | [**Wazuh**](./Wazuh/wazuh-readme.md) | 🔵 Blue | Open-source SIEM and XDR |  ✅ Available |
+| <img src="Images/Suricata.jpg" width="70" alt="Suricata"/> | [**Suricata**](./Suricata/Suricata-README.md) | 🔵 Blue | Network IDS/IPS and traffic monitoring | ✅ Available |
 | <img src="Images/rustinel.jpg" width="70" alt="Rustinel"/> | **Rustinel** | 🔵 Blue | Lightweight endpoint detection agent | 🚧 Coming soon |
 | <img src="Images/thehive.png" width="70" alt="TheHive"/> | **TheHive & Cortex** | 🔵 Blue | Incident response and case management, plus observable analysis | 🚧 Coming soon |
 | <img src="Images/shuffle.jpg" width="70" alt="Shuffle"/> | **Shuffle SOAR** | 🔵 Blue | Security automation with visual workflows | 🚧 Coming soon |
