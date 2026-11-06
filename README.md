@@ -65,10 +65,6 @@ The series covers both sides of cybersecurity:
 - 🔵 **Defensive (Blue Team):** detect, monitor, investigate, and respond to threats.
 - 🔴 **Offensive (Red Team):** find weaknesses and simulate attacks in a safe, authorized lab.
 
-<p align="center">
-  <img src="assets/images/overview.png" alt="Series overview: blue team and red team tools" width="85%"/>
-</p>
-
 ---
 
 ## 2. Tools at a glance
