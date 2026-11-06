@@ -1,0 +1,46 @@
+# SEC W TOM lab rules for Suricata (educational use only)
+# sid range 9000001+ is reserved for lab rules. Replace $HOME_NET in suricata.yaml with your lab subnet.
+
+# ---------- Recon ----------
+alert icmp any any -> $HOME_NET any (msg:"LAB ICMP Echo Request (ping)"; itype:8; classtype:misc-activity; sid:9000001; rev:1;)
+
+alert tcp any any -> $HOME_NET any (msg:"LAB Possible TCP SYN scan (many SYNs from one host)"; flags:S; threshold:type both, track by_src, count 20, seconds 10; classtype:attempted-recon; sid:9000002; rev:1;)
+
+alert tcp any any -> $HOME_NET any (msg:"LAB Nmap NULL scan (no flags)"; flags:0; classtype:attempted-recon; sid:9000003; rev:1;)
+
+alert tcp any any -> $HOME_NET any (msg:"LAB Nmap XMAS scan (FIN+PSH+URG)"; flags:FPU,12; classtype:attempted-recon; sid:9000004; rev:1;)
+
+# ---------- Brute force ----------
+alert tcp any any -> $HOME_NET 22 (msg:"LAB SSH brute force (many new connections)"; flow:to_server; flags:S; threshold:type both, track by_src, count 5, seconds 60; classtype:attempted-admin; sid:9000010; rev:1;)
+
+alert tcp any any -> $HOME_NET 21 (msg:"LAB FTP cleartext password seen"; flow:established,to_server; content:"PASS "; depth:5; classtype:policy-violation; sid:9000011; rev:1;)
+
+# ---------- Web attacks ----------
+alert http any any -> $HOME_NET any (msg:"LAB SQL injection - UNION SELECT in URI"; flow:established,to_server; http.uri; content:"union"; nocase; content:"select"; nocase; distance:0; classtype:web-application-attack; sid:9000020; rev:1;)
+
+alert http any any -> $HOME_NET any (msg:"LAB SQL injection - OR 1=1 in URI"; flow:established,to_server; http.uri; pcre:"/(\x27|%27)\s*or\s*(\x27|%27)?1(\x27|%27)?\s*=\s*(\x27|%27)?1/i"; classtype:web-application-attack; sid:9000021; rev:1;)
+
+alert http any any -> $HOME_NET any (msg:"LAB XSS - script tag in URI"; flow:established,to_server; http.uri; content:"<script"; nocase; classtype:web-application-attack; sid:9000022; rev:1;)
+
+alert http any any -> $HOME_NET any (msg:"LAB Directory traversal in URI"; flow:established,to_server; http.uri.raw; pcre:"/(\.\.|%2e%2e)(\/|%2f|\\|%5c)/i"; classtype:web-application-attack; sid:9000023; rev:1;)
+
+alert http any any -> $HOME_NET any (msg:"LAB Scanner tool user-agent (sqlmap/nikto)"; flow:established,to_server; http.user_agent; pcre:"/(sqlmap|nikto)/i"; classtype:web-application-attack; sid:9000024; rev:1;)
+
+alert http any any -> $HOME_NET any (msg:"LAB Access to /etc/passwd via URI"; flow:established,to_server; http.uri; content:"/etc/passwd"; nocase; classtype:web-application-attack; sid:9000025; rev:1;)
+
+alert http any any -> $HOME_NET any (msg:"LAB Log4Shell JNDI lookup in HTTP header"; flow:established,to_server; http.header; content:"${jndi:"; nocase; classtype:attempted-admin; sid:9000026; rev:1;)
+
+# ---------- Post-exploitation ----------
+alert tcp any any -> any any (msg:"LAB Possible shell session - id command output on the wire"; flow:established; content:"uid="; content:"gid="; distance:0; within:20; content:"groups="; distance:0; within:30; classtype:trojan-activity; sid:9000030; rev:1;)
+
+alert http any any -> $HOME_NET any (msg:"LAB Reverse shell string /dev/tcp in URI"; flow:established,to_server; http.uri; pcre:"/dev(\/|%2f)tcp(\/|%2f)/i"; classtype:web-application-attack; sid:9000031; rev:1;)
+
+# ---------- DNS / TLS ----------
+alert dns any any -> any any (msg:"LAB DNS query for lab-blocked domain"; dns.query; content:"evil-lab.test"; nocase; endswith; classtype:trojan-activity; sid:9000040; rev:1;)
+
+alert dns any any -> any any (msg:"LAB Possible DNS tunneling - very long label"; dns.query; pcre:"/^[a-z0-9]{40,}\./i"; classtype:bad-unknown; sid:9000041; rev:1;)
+
+alert tls any any -> any any (msg:"LAB TLS connection to lab-blocked SNI"; tls.sni; content:"badsite.lab"; nocase; endswith; classtype:trojan-activity; sid:9000042; rev:1;)
+
+# ---------- IPS example (needs inline mode; see README) ----------
+# drop http any any -> $HOME_NET any (msg:"LAB IPS DROP - SQLi UNION SELECT"; flow:established,to_server; http.uri; content:"union"; nocase; content:"select"; nocase; distance:0; classtype:web-application-attack; sid:9000050; rev:1;)
