@@ -393,8 +393,8 @@ Suggested order (you can follow any order you like):
 
 | # | Tool | Team | Skill you build | Status |
 |---|---|---|---|---|
-| 1 | Suricata | 🔵 | Network detection and rule writing | ✅ Available |
-| 2 | Wazuh | 🔵 | SIEM basics and endpoint monitoring | 🚧 |
+| 1 | Wazuh | 🔵 | SIEM basics and endpoint monitoring | ✅ Available |
+| 2 | Suricata | 🔵 | Network detection and rule writing | ✅ Available |
 | 3 | Rustinel | 🔵 | Endpoint detection with Sigma/YARA | 🚧 |
 | 4 | TheHive & Cortex | 🔵 | Incident response and case handling | 🚧 |
 | 5 | Shuffle SOAR | 🔵 | Security automation | 🚧 |
@@ -522,7 +522,7 @@ This repository is provided **for educational purposes and authorized security t
 <table>
   <tr>
     <td width="120" align="center">
-      <img src="assets/images/author.png" alt="Om Gohil" width="100"/>
+      <img src="Images/author.png" alt="Om Gohil" width="150"/>
     </td>
     <td>
       <b>Om Gohil</b>, cybersecurity student and creator of <b>SEC W TOM</b>.<br/><br/>
