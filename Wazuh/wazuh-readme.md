@@ -13,7 +13,7 @@ IMAGE CHECKLIST (add your own screenshots, GitHub does not show this comment)
 
 <div align="center">
 
-<img src="Images/swt.png" alt="Wazuh Installation Guide - SEC W TOM" width="70%"/>
+
 
 # 🛡️ Wazuh on Ubuntu: Install, Connect Agents, and Detect Threats
 
