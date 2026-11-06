@@ -95,35 +95,10 @@ The series covers both sides of cybersecurity:
 Defensive tools let you **detect threats, correlate logs, investigate alerts, and automate incident response**.
 
 ---
-
-### 3.1 Suricata
-
-<p align="center">
-  <img src="assets/images/tools/suricata.png" alt="Suricata IDS/IPS" width="70%"/>
-</p>
-
-| | |
-|---|---|
-| **Category** | Network IDS / IPS / Network Security Monitoring |
-| **Best for** | Seeing and detecting threats in network traffic |
-| **Status** | ✅ [Guide available](./Suricata/) |
-
-**What it is:** A high-performance, multi-threaded network threat detection engine. It reads traffic, compares it with rules, and can alert or block.
-
-**Key features**
-- IDS (alert) and IPS (block) modes
-- Deep protocol awareness (HTTP, DNS, TLS and more)
-- Rich JSON logs (`eve.json`) that feed SIEM tools
-- Huge free community rulesets plus your own custom rules
-
-**In the guide:** install on Ubuntu, configuration, rule updates, reading logs, writing rules, 12 attack scenarios with detection rules, IPS mode, and tuning.
-
----
-
-### 3.2 Wazuh
+### 3.1 Wazuh
 
 <p align="center">
-  <img src="assets/images/tools/wazuh.png" alt="Wazuh SIEM and XDR" width="70%"/>
+  <img src="Images/wazuh.png" alt="Wazuh SIEM and XDR" width="200"/>
 </p>
 
 | | |
@@ -144,10 +119,34 @@ Defensive tools let you **detect threats, correlate logs, investigate alerts, an
 
 ---
 
+### 3.2 Suricata
+
+<p align="center">
+  <img src="Images/Suricata.jpg" alt="Suricata IDS/IPS" width="200"/>
+</p>
+
+| | |
+|---|---|
+| **Category** | Network IDS / IPS / Network Security Monitoring |
+| **Best for** | Seeing and detecting threats in network traffic |
+| **Status** | ✅ [Guide available](./Suricata/) |
+
+**What it is:** A high-performance, multi-threaded network threat detection engine. It reads traffic, compares it with rules, and can alert or block.
+
+**Key features**
+- IDS (alert) and IPS (block) modes
+- Deep protocol awareness (HTTP, DNS, TLS and more)
+- Rich JSON logs (`eve.json`) that feed SIEM tools
+- Huge free community rulesets plus your own custom rules
+
+**In the guide:** install on Ubuntu, configuration, rule updates, reading logs, writing rules, 12 attack scenarios with detection rules, IPS mode, and tuning.
+
+---
+
 ### 3.3 Rustinel
 
 <p align="center">
-  <img src="assets/images/tools/rustinel.png" alt="Rustinel endpoint detection" width="70%"/>
+  <img src="Images/rustinel.jpg" alt="Rustinel endpoint detection" width="200"/>
 </p>
 
 | | |
@@ -174,8 +173,7 @@ Defensive tools let you **detect threats, correlate logs, investigate alerts, an
 ### 3.4 TheHive & Cortex
 
 <p align="center">
-  <img src="assets/images/tools/thehive.png" alt="TheHive incident response" width="48%"/>
-  <img src="assets/images/tools/cortex.png" alt="Cortex analysis engine" width="48%"/>
+  <img src="Images/thehive.png" alt="TheHive incident response" width="200"/>
 </p>
 
 | | |
@@ -202,7 +200,7 @@ Defensive tools let you **detect threats, correlate logs, investigate alerts, an
 ### 3.5 Shuffle SOAR
 
 <p align="center">
-  <img src="assets/images/tools/shuffle.png" alt="Shuffle SOAR" width="70%"/>
+  <img src="Images/shuffle.jpg" alt="Shuffle SOAR" width="200"/>
 </p>
 
 | | |
@@ -233,7 +231,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 ### 4.1 Feroxbuster
 
 <p align="center">
-  <img src="assets/images/tools/feroxbuster.png" alt="Feroxbuster" width="70%"/>
+  <img src="Images/forex.png" alt="Feroxbuster" width="200"/>
 </p>
 
 | | |
@@ -256,7 +254,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 ### 4.2 AutoPWN Suite
 
 <p align="center">
-  <img src="assets/images/tools/autopwn-suite.png" alt="AutoPWN Suite" width="70%"/>
+  <img src="Images/aps.jfif" alt="AutoPWN Suite" width="200"/>
 </p>
 
 | | |
@@ -279,7 +277,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 ### 4.3 Sliver
 
 <p align="center">
-  <img src="assets/images/tools/sliver.png" alt="Sliver C2 framework" width="70%"/>
+  <img src="Images/sliver.png" alt="Sliver C2 framework" width="200"/>
 </p>
 
 | | |
@@ -302,7 +300,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 ### 4.4 PentestGPT
 
 <p align="center">
-  <img src="assets/images/tools/pentestgpt.png" alt="PentestGPT" width="70%"/>
+  <img src="Images/pentest.jfif"" alt="PentestGPT" width="200"/>
 </p>
 
 | | |
@@ -327,7 +325,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 ### 4.5 SysReptor
 
 <p align="center">
-  <img src="assets/images/tools/sysreptor.png" alt="SysReptor reporting" width="70%"/>
+  <img src="Images/sysrepo.jpg"  alt="SysReptor reporting" width="200"/>
 </p>
 
 | | |
