@@ -108,9 +108,6 @@ flowchart LR
 3. **Alert:** matches are written to a local JSON alert file.
 4. **Ship (optional):** a log shipper or SIEM agent reads that file.
 
-<p align="center">
-  <img src="../assets/images/rustinel/architecture.png" alt="Rustinel architecture" width="80%"/>
-</p>
 
 ---
 
