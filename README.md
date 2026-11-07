@@ -125,7 +125,7 @@ Defensive tools let you **detect threats, correlate logs, investigate alerts, an
 |---|---|
 | **Category** | Network IDS / IPS / Network Security Monitoring |
 | **Best for** | Seeing and detecting threats in network traffic |
-| **Status** | ✅ [Guide available](./Suricata/) |
+| **Status** | ✅ [Guide available](./Suricata/suricata-README.md) |
 
 **What it is:** A high-performance, multi-threaded network threat detection engine. It reads traffic, compares it with rules, and can alert or block.
 
