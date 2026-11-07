@@ -11,6 +11,7 @@ VIDEO LINK: when your video is published, replace VIDEO_ID below (and uncomment 
 -->
 
 <div align="center">
+    
 # 🦀 Rustinel on Ubuntu: Install, Run, and Write Detection Rules
 
 **A beginner-friendly guide to Rustinel, a lightweight open-source endpoint detection agent written in Rust.**
