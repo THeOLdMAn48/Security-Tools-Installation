@@ -101,7 +101,7 @@ Defensive tools let you **detect threats, correlate logs, investigate alerts, an
 |---|---|
 | **Category** | SIEM / XDR |
 | **Best for** | Central log analysis and endpoint monitoring |
-| **Status** | 🚧 Coming soon |
+| **Status** | ✅ [**GUIDE AVAILABLE**](./Wazuh/wazuh-readme.md) |
 
 **What it is:** A leading open-source security platform that monitors endpoints in real time and shows alerts in a web dashboard.
 
@@ -125,7 +125,7 @@ Defensive tools let you **detect threats, correlate logs, investigate alerts, an
 |---|---|
 | **Category** | Network IDS / IPS / Network Security Monitoring |
 | **Best for** | Seeing and detecting threats in network traffic |
-| **Status** | ✅ [Guide available](./Suricata/suricata-README.md) |
+| **Status** | ✅ [GUIDE AVAILABLE](./Suricata/suricata-README.md) |
 
 **What it is:** A high-performance, multi-threaded network threat detection engine. It reads traffic, compares it with rules, and can alert or block.
 
@@ -149,7 +149,7 @@ Defensive tools let you **detect threats, correlate logs, investigate alerts, an
 |---|---|
 | **Category** | Endpoint detection agent (EDR-style) |
 | **Best for** | Low-overhead host telemetry and behavior monitoring |
-| **Status** | 🚧 Coming soon |
+| **Status** |✅ [**GUIDE AVAILABLE**](./Rustinel/rust-readme.md)  |
 
 **What it is:** A lightweight, open-source endpoint detection agent written in Rust for **Windows and Linux**, built around one codebase and one rule workflow.
 
@@ -176,7 +176,7 @@ Defensive tools let you **detect threats, correlate logs, investigate alerts, an
 |---|---|
 | **Category** | Security Incident Response Platform (SIRP) and observable analysis |
 | **Best for** | SOC case management and investigation workflow |
-| **Status** | 🚧 Coming soon |
+| **Status** | ✅ [**GUIDE AVAILABLE**](./thehive/th-readme.md) |
 
 **What they are:**
 - **TheHive** is a case management platform where analysts receive alerts, work on cases, track tasks, and document incident resolution.
@@ -203,7 +203,7 @@ Defensive tools let you **detect threats, correlate logs, investigate alerts, an
 |---|---|
 | **Category** | SOAR (Security Orchestration, Automation and Response) |
 | **Best for** | Automating repetitive SOC tasks |
-| **Status** | 🚧 Coming soon |
+| **Status** | ✅ [**GUIDE AVAILABLE**](./shuffle/shuffle-readme.md)  |
 
 **What it is:** An open-source SOAR platform with a **visual, node-based workflow builder**. You connect tools together and automate responses without heavy coding.
 
@@ -234,7 +234,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 |---|---|
 | **Category** | Web reconnaissance |
 | **Best for** | Finding hidden directories and files on web servers |
-| **Status** | 🚧 Coming soon |
+| **Status** | ✅ [**GUIDE AVAILABLE**](./forexbuster/forex-readme.md)|
 
 **What it is:** A fast, **recursive** content and directory discovery scanner written in Rust. It is a modern alternative to older tools like Dirb and Gobuster, with clear live feedback in the terminal.
 
@@ -257,7 +257,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 |---|---|
 | **Category** | Vulnerability scanning |
 | **Best for** | Quickly mapping open ports to known CVEs |
-| **Status** | 🚧 Coming soon |
+| **Status** |✅ [**GUIDE AVAILABLE**](./autopwn/autopwn-readme.md) |
 
 **What it is:** A Python-based automated vulnerability scanner. It scans ports and services, then correlates them with **known CVE vulnerabilities** to show likely weaknesses.
 
@@ -280,7 +280,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 |---|---|
 | **Category** | Command and Control (C2) / adversary simulation |
 | **Best for** | Understanding attacker tradecraft and red-team operations |
-| **Status** | 🚧 Coming soon |
+| **Status** | ✅ [**GUIDE AVAILABLE**](./sliver/sliver-readme.md) |
 
 **What it is:** An open-source C2 framework developed by **Bishop Fox**, often described as a modern alternative to commercial C2 tools.
 
@@ -303,7 +303,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 |---|---|
 | **Category** | AI-assisted penetration testing |
 | **Best for** | Guiding pentest tasks with an LLM assistant |
-| **Status** | 🚧 Coming soon |
+| **Status** |✅ [**GUIDE AVAILABLE**](./pentestgpt/pg-readme.md) |
 
 **What it is:** An **LLM-powered** penetration testing assistant that helps structure attack paths and guides interactive pentesting tasks.
 
@@ -328,7 +328,7 @@ Offensive tools show how attackers think: **reconnaissance, attack surface disco
 |---|---|
 | **Category** | Pentest reporting |
 | **Best for** | Writing professional, client-ready pentest reports |
-| **Status** | 🚧 Coming soon |
+| **Status** | ✅ [**GUIDE AVAILABLE**](./sysreptor/sr-readme.md)  |
 
 **What it is:** A browser-based, self-hostable platform for writing penetration test reports. Reporting is the part many pentesters find hardest, so it makes a valuable tutorial.
 
