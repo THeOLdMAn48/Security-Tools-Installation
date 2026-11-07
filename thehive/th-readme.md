@@ -16,7 +16,7 @@ VIDEO LINK: when your video is published, replace VIDEO_ID below and uncomment t
 
 <div align="center">
 
-<img src="Images/thehive.png" alt="TheHive" width="180"/> &nbsp;&nbsp;&nbsp; <img src="Images/cortex.png" alt="Cortex" width="180"/>
+<img src="../Images/thehive.png" alt="TheHive" width="180"/> &nbsp;&nbsp;&nbsp; <img src="../Images/cortex.png" alt="Cortex" width="180"/>
 
 # 🐝 TheHive & Cortex on Ubuntu: Install, Connect, and Investigate
 
@@ -231,7 +231,7 @@ The script shows a menu. Type the number and press Enter:
 Choose **2**. When it finishes, the **final output shows the URL** to open TheHive.
 
 <p align="center">
-  <img src="Images/hive-install.gif" alt="TheHive install script menu" width="80%"/>
+  <img src="../Images/hive-install.gif" alt="TheHive install script menu" width="80%"/>
 </p>
 
 > ⚠️ **The script does not enable authentication on Cassandra or Elasticsearch.** That is fine for an isolated lab, but you must enable it before using TheHive for anything real. See [Section 13](#13-secure-your-installation).
@@ -309,7 +309,7 @@ Then open the URL from the installer output (typically `http://<THEHIVE_IP>:9000
 3. Click **Let me in**.
 
 <p align="center">
-  <img src="../Images/thehive/login.png" alt="TheHive login" width="70%"/>
+  <img src="../Images/the-hive.png" alt="TheHive login" width="70%"/>
 </p>
 
 ### Do these first, in this order
