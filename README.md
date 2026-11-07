@@ -73,14 +73,13 @@ The series covers both sides of cybersecurity:
 |---|---|---|---|---|
 | <img src="Images/wazuh.png" width="70" alt="Wazuh"/> | [**Wazuh**](./Wazuh/wazuh-readme.md) | 🔵 Blue | Open-source SIEM and XDR |  ✅ Available |
 | <img src="Images/Suricata.jpg" width="70" alt="Suricata"/> | [**Suricata**](./Suricata/Suricata-README.md) | 🔵 Blue | Network IDS/IPS and traffic monitoring | ✅ Available |
-| <img src="Images/rustinel.jpg" width="70" alt="Rustinel"/> | [**Rustinel**] | 🔵 Blue | Lightweight endpoint detection agent | 🚧 Coming soon |
-| <img src="Images/thehive.png" width="70" alt="TheHive"/> | [**TheHive & Cortex**] | 🔵 Blue | Incident response and case management, plus observable analysis | 🚧 Coming soon |
-| <img src="Images/shuffle.jpg" width="70" alt="Shuffle"/> | [**Shuffle SOAR**] | 🔵 Blue | Security automation with visual workflows | 🚧 Coming soon |
-| <img src="Images/forex.png" width="70" alt="Feroxbuster"/> | [**Feroxbuster**] | 🔴 Red | Fast web content and directory discovery | 🚧 Coming soon |
-| <img src="Images/aps.jfif" width="70" alt="AutoPWN Suite"/> | [**AutoPWN Suite**] | 🔴 Red | Automated vulnerability scanning | 🚧 Coming soon |
-| <img src="Images/sliver.png" width="70" alt="Sliver"/> | [**Sliver**] | 🔴 Red | Command and control (C2) framework | 🚧 Coming soon |
-| <img src="Images/pentest.jfif" width="70" alt="PentestGPT"/> | [**PentestGPT**] | 🔴 Red | AI-assisted penetration testing | 🚧 Coming soon |
-| <img src="Images/sysrepo.jpg" width="70" alt="SysReptor"/> | [**SysReptor**] | 🔴 Red | Pentest report writing platform | 🚧 Coming soon |
+| <img src="Images/rustinel.jpg" width="70" alt="Rustinel"/> | [**Rustinel**](./Rustinel/rust-readme.md) | 🔵 Blue | Lightweight endpoint detection agent |✅ Available|
+| <img src="Images/thehive.png" width="70" alt="TheHive"/> | [**TheHive & Cortex**](./thehive/th-readme.md) | 🔵 Blue | Incident response and case management, plus observable analysis | 🚧 Coming soon |
+| <img src="Images/shuffle.jpg" width="70" alt="Shuffle"/> | [**Shuffle SOAR**](./shuffle/shuffle-readme.md) | 🔵 Blue | Security automation with visual workflows | ✅ Available |
+| <img src="Images/forex.png" width="70" alt="Feroxbuster"/> | [**Feroxbuster**](./forexbuster/forex-readme.md) | 🔴 Red | Fast web content and directory discovery | ✅ Available |
+| <img src="Images/sliver.png" width="70" alt="Sliver"/> | [**Sliver**](./sliver/sliver-readme.md) | 🔴 Red | Command and control (C2) framework | ✅ Available |
+| <img src="Images/pentest.jfif" width="70" alt="PentestGPT"/> | [**PentestGPT**](./pentestgpt/pg-readme.md) | 🔴 Red | AI-assisted penetration testing | ✅ Available |
+| <img src="Images/sysrepo.jpg" width="70" alt="SysReptor"/> | [**SysReptor**](./sysreptor/sr-readme.md) | 🔴 Red | Pentest report writing platform | ✅ Available |
 
 **Legend:** ✅ guide published · 🚧 planned for the series. More tools will be added over time.
 
